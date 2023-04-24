@@ -20,6 +20,7 @@ public class ClientApplication {
                 if (message.equals("/exit")) break;
                 socket.getOutputStream().write(message.getBytes());
             }
+            System.out.println("Input terminated...");
 
         } catch (IOException e) {
             e.printStackTrace();
